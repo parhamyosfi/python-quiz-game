@@ -1,33 +1,28 @@
-from question import qouestions
+from question import questions
 
-
-name = input("whats your name")
-
+name = input("what's your name? ")
 
 print("welcome")
 
-
 score = 0
 
-for  item in qouestions:
-    answer = input(item["question"])
+for item in questions:
+    answer = input(item["questions"])
+    
     if answer.lower() == item["answer"]:
-        print("corect")
+        print("correct")
         score += 1
-
     else:
         print("wrong")
 
+print("your score is: ", score, "out of", len(questions))
 
-print("your score is: ", score, " out of ", len(qouestions))
-
-
-if score == len(qouestions):
-    print("exelent job", name)
-
-if score == len(qouestions):
-    print("good job", name)
-
-
-if score == len(qouestions):
-    print("keep trying job", name)
+if score == len(questions):
+    print("excellent job, ", name,"!")
+if score >= 2:
+    print("good job, ", name,"!")
+else:
+    print("keep practing", name,".")
+    
+with open("results.txt", "a") as file:
+    file.write(f"{name} - {score}/{len(questions)}\n")

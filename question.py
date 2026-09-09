@@ -1,4 +1,4 @@
-qouestions = [
+questions = [
     {
 
     "questions": "what language are we using? ",
