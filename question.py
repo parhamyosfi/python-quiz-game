@@ -1,17 +1,17 @@
 qouestions = [
     {
 
-    "question": "what language are we using? ",
+    "questions": "what language are we using? ",
     "answer" : "python"
     },
 
     {
-        "question": "what command start git? ",
+        "questions": "what command start git? ",
         "answer" : "git init"
     },
 
     {
-        "question": "what command show git status? ",
+        "questions": "what command show git status? ",
         "answer" : "git init"
     },
 ]
