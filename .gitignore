@@ -1,2 +1,12 @@
+# python cahe
+
+
 __pycache__/
+# results
 results.txt
+
+# log files
+*.log
+
+# privit
+.env
