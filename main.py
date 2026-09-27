@@ -7,15 +7,21 @@ from question import questions
 load_dotenv()
 admin_password = os.getenv("quiz_admin_password")
 open_admin = input("do you want to move to admin move y/n: ")
-if open_admin.lower == "y" or "yes":
-    entered_pasword = input("enter admin pasword")
+while True:
+    if open_admin.lower == "n" or "no":
+        print("ok no worry")
+        break
+    if open_admin.lower == "y" or "yes":
+        entered_pasword = input("enter admin pasword")
+        break
 
 
-    if entered_pasword == admin_password:
-        print("hi admin")
+        if entered_pasword == admin_password:
+            print("hi admin")
+            break
 
-    else:
-        print("sorry but you are not admin")
+        else:
+            print("sorry but you are not admin")
 
 
 name = input("what's your name? ")

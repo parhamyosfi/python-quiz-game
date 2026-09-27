@@ -4,10 +4,11 @@ a simple quiz game built with python
 ## Table Of Contens
 
 
-- [Table Of Contens](#table-of-contens)
+
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
+
 
 ## Features
 - quiz system
@@ -95,6 +96,15 @@ wrong
 your score is:  1 out of 3
 keep practing parham .
 ```
+## Screenshot
+### start game
+![start game1](.\1.png)
+### quiz
+![quiz](.\2.png)
+\1.png)
+### final score
+![final score](.\3.png)
+
 ## Roadmap
 - [x] add multiple quiz question
 - [x] calculate the final score
