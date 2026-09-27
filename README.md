@@ -1,4 +1,6 @@
 # Pygame quiz game
+![Static Badge](https://img.shields.io/badge/python-3.12-blue)
+
 a simple quiz game built with python
 
 ## Table Of Contens
@@ -26,20 +28,36 @@ a simple quiz game built with python
 ## Project Structure
 ```
 python_quiz_game/
+│   .env
 │   .env.example
 │   .gitignore
-│   requirments.txt
+│   1.png
+│   2.png
+│   3.png
+│   Animation.gif
+│   app.log
+│   debug.log
+│   demo.gif
+│   error.log
 │   main.py
 │   question.py
 │   README.md
+│   requirments.txt
+│   results.txt
 
 ```
 ### File Discreption
-- `main.py` - main file used to run quiz game
-- `question.py` - stores questions and answers
-- `enve example` - shows the envoirment variables needed by prroject
-- `gitignore` - tells git whitch files and folders
-- `requirments` - package lists
+| file|discrption|
+|---|---|
+| `main.py` | main file used to run quiz game|
+| `question.py` | stores questions and answers|
+| `enve example` | shows the envoirment variables needed by prroject|
+| `gitignore` | tells git whitch files and folders|
+| `requirments` | package lists|
+| `1.png` |stores start game picture|
+| `2.png` |stores quiz game picture|
+| `3.png` |stores final output|
+| `demo.gif` |stores the project outpot|
 ## Requirements
 Before running the project, make sure you have:
 - `python 3`
@@ -101,10 +119,10 @@ keep practing parham .
 ![start game1](.\1.png)
 ### quiz
 ![quiz](.\2.png)
-\1.png)
 ### final score
 ![final score](.\3.png)
-
+## demo
+![quiz game demo](.\demo.gif)
 ## Roadmap
 - [x] add multiple quiz question
 - [x] calculate the final score
