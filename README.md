@@ -100,17 +100,20 @@ python main.py
 8. your result is saved in `result.txt`
 ## Example Output
 ```text
-do you want to move to admin move y/n: y
-enter admin pasword123
-sorry but you are not admin
+do you want to move to admin move y/n: no
+
 what's your name? parham
 welcome
+
 what language are we using? g++
 wrong
+
 what command start git? git init
 correct
+
 what command show git status? git log --oneline --all
 wrong
+
 your score is:  1 out of 3
 keep practing parham .
 ```

@@ -3,26 +3,18 @@ from dotenv import load_dotenv
 from question import questions
 
 
-
 load_dotenv()
-admin_password = os.getenv("quiz_admin_password")
-open_admin = input("do you want to move to admin move y/n: ")
-while True:
-    if open_admin.lower == "n" or "no":
-        print("ok no worry")
-        break
-    if open_admin.lower == "y" or "yes":
-        entered_pasword = input("enter admin pasword")
-        break
+admin_password = os.getenv("QUIZ_ADMIN_PASSWORD")
 
+open_admin = input("do you want to open admin mode? yes/no: ")
 
-        if entered_pasword == admin_password:
-            print("hi admin")
-            break
-
-        else:
-            print("sorry but you are not admin")
-
+if open_admin == "yes":
+    entered_password = input("enter admin password: ")
+    
+    if entered_password == admin_password:
+        print("admin! hi...")
+    else:
+        print("wrong password")
 
 name = input("what's your name? ")
 
@@ -31,7 +23,7 @@ print("welcome")
 score = 0
 
 for item in questions:
-    answer = input(item["questions"])
+    answer = input(item["question"])
     
     if answer.lower() == item["answer"]:
         print("correct")
